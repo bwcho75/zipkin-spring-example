@@ -1,0 +1,14 @@
+server:
+  port: 8081
+spring:
+  application:
+    name: zipkin-demo-server1
+  zipkin:
+    baseUrl: http://127.0.0.1:9411/
+  sleuth:
+    enabled: true
+    sampler:
+      probability: 1.0
+sample:
+  zipkin:
+    enabled: true
